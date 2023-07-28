@@ -3,11 +3,11 @@
     padding: 0;
 }
 body {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 10px;
+    justify-content: center;
 }
 main {
     display: flex;
@@ -18,5 +18,6 @@ main {
     display: flex;
 }
 .gridItem {
-    border: 1px solid red;
+    transition-duration: .1s;
+    
 }

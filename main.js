@@ -12,10 +12,15 @@ function buildGrid(gridSize) {
             gridItem.classList.add("gridItem");
             gridItem.style.height = "10px";
             gridItem.style.width = "10px";
+            gridItem.addEventListener("mouseenter", changeColor);
             displayArea.lastElementChild.appendChild(gridItem);
         }
     }
-
 }
 
-buildGrid(16);
+function changeColor(e) {
+    e.target.style.backgroundColor = "black";
+}
+
+
+buildGrid(32);
