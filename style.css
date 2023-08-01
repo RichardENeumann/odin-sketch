@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+html {
+    font-size: 15px;
+    font-family: monospace;
+    text-align: center;
+}
 body {
     height: 100vh;
     display: flex;
@@ -9,12 +14,27 @@ body {
     align-items: center;
     justify-content: center;
 }
+header {
+    max-width: 50%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+nav {
+    margin: 16px 0;
+}
+nav > button {
+    padding: 5px;
+    background-color: orange;
+    border: 1px solid black;
+    border-radius: 5px;
+}
 main {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
 }
 .gridRow {
     display: flex;
