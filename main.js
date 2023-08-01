@@ -3,12 +3,12 @@
 const displayArea = document.querySelector("main");
 
 function enterGridSize () {
-    let userEntry = prompt("What size (up to 96) should the grid be?", 16);
-
-    if (userEntry > 96 || userEntry < 1 || Number.isNaN(userEntry)) userEntry = 16;
+    let userEntry = parseInt(prompt("What size (up to 96) should the grid be?", 16));
+    
+    if (Number.isNaN(userEntry) || userEntry > 96 || userEntry < 1 ) userEntry = 16;
     while (displayArea.lastElementChild) displayArea.removeChild(displayArea.lastElementChild);
     
-    buildGrid(+userEntry);
+    buildGrid(userEntry);
 }
 
 function buildGrid(gridSize) {
